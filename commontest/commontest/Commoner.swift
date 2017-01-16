@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Commoner {
+@objc public class Commoner: NSObject {
     
     @objc static public func sayHello(who: String) -> String {
         return "hello, \(who)"
