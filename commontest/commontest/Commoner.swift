@@ -10,7 +10,7 @@ import Foundation
 
 public class Commoner {
     
-    static public func sayHello(who: String) -> String {
+    @objc static public func sayHello(who: String) -> String {
         return "hello, \(who)"
     }
 }
