@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Commoner {
+public class Commoner {
     
     static func sayHello(who: String) -> String {
         return "hello, \(who)"
