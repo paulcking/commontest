@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		67680CA41E2C7D1B00608777 /* commontest.h in Headers */ = {isa = PBXBuildFile; fileRef = 67680CA21E2C7D1B00608777 /* commontest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67680CAB1E2C82C000608777 /* Commoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67680CAA1E2C82BF00608777 /* Commoner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67680C9F1E2C7D1B00608777 /* commontest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = commontest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67680CA21E2C7D1B00608777 /* commontest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commontest.h; sourceTree = "<group>"; };
 		67680CA31E2C7D1B00608777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67680CAA1E2C82BF00608777 /* Commoner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commoner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				67680CA21E2C7D1B00608777 /* commontest.h */,
 				67680CA31E2C7D1B00608777 /* Info.plist */,
+				67680CAA1E2C82BF00608777 /* Commoner.swift */,
 			);
 			path = commontest;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					67680C9E1E2C7D1B00608777 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67680CAB1E2C82C000608777 /* Commoner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +244,7 @@
 		67680CA81E2C7D1B00608777 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +256,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vnp.commontest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +264,7 @@
 		67680CA91E2C7D1B00608777 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
